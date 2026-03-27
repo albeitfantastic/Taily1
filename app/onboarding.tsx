@@ -76,7 +76,7 @@ export default function OnboardingScreen() {
     };
     dispatch({ type: 'ADD_DOG', payload: dog });
     dispatch({ type: 'COMPLETE_ONBOARDING' });
-    router.replace('/(tabs)');
+    router.replace('/');
   };
 
   const slide = SLIDES[step];
