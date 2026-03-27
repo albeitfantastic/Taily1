@@ -197,6 +197,31 @@ function reducer(state: AppState, action: Action): AppState {
         ...state,
         plannedEvents: state.plannedEvents.filter(e => e.id !== action.payload),
       };
+      case 'DELETE_POTTY_LOG':
+        return {
+          ...state,
+          pottyLogs: state.pottyLogs.filter((log: any) => log.id !== action.payload.id),
+        };
+      
+      case 'DELETE_WALK_LOG':
+        return {
+          ...state,
+          walkLogs: state.walkLogs.filter((log: any) => log.id !== action.payload.id),
+        };
+      
+      case 'DELETE_MEAL_LOG':
+        return {
+          ...state,
+          mealLogs: state.mealLogs.filter((log: any) => log.id !== action.payload.id),
+        };
+      
+      case 'DELETE_DIARY_ENTRY':
+        return {
+          ...state,
+          diaryEntries: state.diaryEntries.filter((entry: any) => entry.id !== action.payload.id),
+        };
+
+
 
     default:
       return state;
