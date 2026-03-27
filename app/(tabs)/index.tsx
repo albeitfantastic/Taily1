@@ -4,8 +4,8 @@ import {
   SafeAreaView, Dimensions,
 } from 'react-native';
 import { router } from 'expo-router';
-import { Colors, Typography, Spacing, Radius, Shadow } from '../constants/theme';
-import { useApp, todayLogs } from '../context/AppContext';
+import { Colors, Typography, Spacing, Radius, Shadow } from '../../constants/theme';
+import { useApp, todayLogs } from '../../context/AppContext';
 
 const { width } = Dimensions.get('window');
 
