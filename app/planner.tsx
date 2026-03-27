@@ -3,8 +3,8 @@ import {
   View, Text, StyleSheet, ScrollView, TouchableOpacity,
   SafeAreaView, Modal, TextInput,
 } from 'react-native';
-import { Colors, Spacing, Radius, Shadow } from '../../constants/theme';
-import { useApp, generateId, PlannedEvent } from '../../context/AppContext';
+import { Colors, Spacing, Radius, Shadow } from '../constants/theme';
+import { useApp, generateId, PlannedEvent } from '../context/AppContext';
 
 type EventType = PlannedEvent['type'];
 

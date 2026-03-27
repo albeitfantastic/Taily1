@@ -3,8 +3,8 @@ import {
   View, Text, StyleSheet, ScrollView, TouchableOpacity,
   SafeAreaView, Modal, TextInput,
 } from 'react-native';
-import { Colors, Radius, Shadow } from '../../constants/theme';
-import { useApp, Dog, generateId } from '../../context/AppContext';
+import { Colors, Radius, Shadow } from '../constants/theme';
+import { useApp, Dog, generateId } from '../context/AppContext';
 
 export default function ProfileScreen() {
   const { state, dispatch, activeDog } = useApp();

@@ -4,8 +4,8 @@ import {
   ScrollView, TextInput, Animated, Image,
 } from 'react-native';
 import { router } from 'expo-router';
-import { Colors, Typography, Spacing, Radius, Shadow } from '../../constants/theme';
-import { useApp, generateId } from '../../context/AppContext';
+import { Colors, Typography, Spacing, Radius, Shadow } from '../constants/theme';
+import { useApp, generateId } from '../context/AppContext';
 
 const { width, height } = Dimensions.get('window');
 

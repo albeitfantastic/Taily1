@@ -3,8 +3,8 @@ import {
   View, Text, StyleSheet, ScrollView, TouchableOpacity, SafeAreaView,
 } from 'react-native';
 import { router } from 'expo-router';
-import { Colors, Radius, Shadow } from '../../constants/theme';
-import { useApp } from '../../context/AppContext';
+import { Colors, Radius, Shadow } from '../constants/theme';
+import { useApp } from '../context/AppContext';
 
 const MOOD_META: Record<string, { emoji: string; label: string; color: string }> = {
   happy: { emoji: '😄', label: 'Happy', color: Colors.meal },
